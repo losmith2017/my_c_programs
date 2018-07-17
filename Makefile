@@ -3,7 +3,7 @@ LIBS = -lm
 CC = gcc
 CFLAGS = -g -Wall
 
-.PHONY: default all clean mytest
+.PHONY: default all clean mytest mytest2
 
 default: $(TARGET)
 all: default
@@ -31,6 +31,8 @@ GOOFY2 = -lmath
 mytest: 
 	@echo $(GOOFY)
 	@echo $(CFLAGS)
+
+mytest2:
 	@echo $(CFLAGS2)
 
 clean:
